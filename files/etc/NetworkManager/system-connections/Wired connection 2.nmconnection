@@ -1,0 +1,19 @@
+[connection]
+id=Wired connection 2
+uuid=cada4cd2-2e81-313f-9c2d-b68df481b4c3
+type=ethernet
+autoconnect-priority=-100
+
+[ethernet]
+auto-negotiate=true
+cloned-mac-address=22:FD:B3:9C:37:AF
+mac-address=98:E7:F4:58:D4:DE
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+
+[proxy]

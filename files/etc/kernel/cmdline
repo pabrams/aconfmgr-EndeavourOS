@@ -1,0 +1,1 @@
+nvme_load=YES rw root=UUID=fdd3e7d7-e568-4060-8996-70337a107804

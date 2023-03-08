@@ -1,0 +1,19 @@
+[connection]
+id=Wired connection 1
+uuid=d8671e70-4551-3592-9a57-f9b5cc3d28aa
+type=ethernet
+autoconnect-priority=-100
+
+[ethernet]
+auto-negotiate=true
+cloned-mac-address=52:17:0D:C3:6A:86
+mac-address=00:24:9B:79:7F:23
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+
+[proxy]
