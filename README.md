@@ -17,9 +17,16 @@ The inital commit was built like this.
 1. Create this file
 1. Follow the instructions shown (roughly) on my the new repository's main page to push my local repo to github (from ~/.config/aconfmgr/):
 
- - git init
- - git add .
- - git commit -m "initial commit"
- - git branch -M trunk
- - git remote add origin https://github.com/pabrams/aconfmgr-EndeavourOS.git
- - git push -u origin trunk
+ - `git init`
+ - `git add .`
+ - `git config --global user.email "john.paul.abrams@gmail.com"`
+ - `git config --global user.name "Paul Abrams"`
+ - `git commit -m "initial commit"`
+ - `git branch -M trunk`
+ - `git remote add origin https://github.com/pabrams/aconfmgr-EndeavourOS.git`
+ - set up a personal access token (classic, with public_repo permission) and copied it to my clipboard
+ - `git push -u origin trunk`
+ - when prompted, entered my github username and password.
+ - commit more changes
+ - run aconfmgr save again to pick up any changed config (e.g. for git)
+ - commit/push changes again
