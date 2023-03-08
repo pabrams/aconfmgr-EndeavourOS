@@ -324,3 +324,9 @@ CreateLink /etc/systemd/user/sockets.target.wants/pipewire.socket /usr/lib/syste
 CopyFile /etc/timezone
 CopyFile /etc/vconsole.conf
 CreateDir /lost+found 700
+
+
+# Wed 08 Mar 2023 03:00:38 AM EST - Unknown packages
+
+
+AddPackage yadm # Yet Another Dotfiles Manager
