@@ -330,3 +330,21 @@ CreateDir /lost+found 700
 
 
 AddPackage yadm # Yet Another Dotfiles Manager
+
+
+# Wed 08 Mar 2023 03:21:57 AM EST - Unknown packages
+
+
+AddPackage ddgr # DuckDuckGo from the terminal
+
+
+# Wed 08 Mar 2023 03:21:57 AM EST - Unknown foreign packages
+
+
+AddPackage --foreign browsh-bin # A fully-modern text-based browser, rendering to TTY and browsers
+
+
+# Wed 08 Mar 2023 03:31:14 AM EST - Unknown packages
+
+
+AddPackage yakuake # A drop-down terminal emulator based on KDE konsole technology
