@@ -348,3 +348,29 @@ AddPackage --foreign browsh-bin # A fully-modern text-based browser, rendering t
 
 
 AddPackage yakuake # A drop-down terminal emulator based on KDE konsole technology
+
+
+# Wed 08 Mar 2023 06:37:12 AM EST - Unknown packages
+
+
+AddPackage code # The Open Source build of Visual Studio Code (vscode) editor
+AddPackage nodejs-lts-hydrogen # Evented I/O for V8 javascript (LTS release: Hydrogen)
+AddPackage npm # A package manager for javascript
+AddPackage terminator # Terminal emulator that supports tabs and grids
+
+
+# Thu 09 Mar 2023 08:38:47 AM EST - Unknown packages
+
+
+AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
+
+
+# Thu 09 Mar 2023 08:38:47 AM EST - New / changed files
+
+
+CopyFile /etc/passwd.OLD
+CreateLink /usr/bin/npm ../lib/node_modules/npm/bin/npm-cli.js
+CreateLink /usr/bin/npx ../lib/node_modules/npm/bin/npx-cli.js
+CreateLink /usr/bin/vsce ../lib/node_modules/@vscode/vsce/vsce
+CopyFile /etc/passwd
+CopyFile /etc/shells
