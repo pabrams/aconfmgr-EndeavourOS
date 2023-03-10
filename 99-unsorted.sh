@@ -374,3 +374,9 @@ CreateLink /usr/bin/npx ../lib/node_modules/npm/bin/npx-cli.js
 CreateLink /usr/bin/vsce ../lib/node_modules/@vscode/vsce/vsce
 CopyFile /etc/passwd
 CopyFile /etc/shells
+
+
+# Thu 09 Mar 2023 11:07:27 PM EST - New / changed files
+
+
+CopyFile /etc/resolv.conf
