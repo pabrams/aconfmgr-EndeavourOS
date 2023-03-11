@@ -1,6 +1,6 @@
 [connection]
 id=Mob39214
-uuid=f6370fd2-9704-469e-ad74-e6d82a32bc8e
+uuid=2216dc1a-fc42-420b-ab62-d8e89dd808e0
 type=wifi
 interface-name=wlan0
 permissions=user:i:;

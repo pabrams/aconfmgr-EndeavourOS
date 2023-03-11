@@ -121,3 +121,32 @@ CreateLink /etc/systemd/user/sockets.target.wants/pipewire.socket /usr/lib/syste
 CopyFile /etc/timezone
 CopyFile /etc/vconsole.conf
 CreateDir /lost+found 700
+
+
+# Sat 11 Mar 2023 11:37:21 AM EST - Unknown packages
+
+
+AddPackage rustup # The Rust toolchain installer
+
+
+# Sat 11 Mar 2023 11:37:21 AM EST - Extra files
+
+
+RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection
+RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection
+RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection
+
+
+# Sat 11 Mar 2023 11:37:21 AM EST - New / changed files
+
+
+CreateLink /usr/bin/jest ../lib/node_modules/jest-cli/bin/jest.js
+CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
+
+
+# Sat 11 Mar 2023 11:37:21 AM EST - Extra file properties
+
+
+SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection mode ''
+SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection mode ''
+SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection mode ''
