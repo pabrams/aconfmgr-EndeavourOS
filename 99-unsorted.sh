@@ -150,3 +150,9 @@ CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
 SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection mode ''
 SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection mode ''
 SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection mode ''
+
+
+# Sat 11 Mar 2023 01:00:46 PM EST - New / changed files
+
+
+CopyFile /etc/resolv.conf
