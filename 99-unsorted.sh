@@ -187,3 +187,21 @@ SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1.conf mode ''
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen-fallback.conf mode ''
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen.conf mode ''
+
+CopyFile /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection 600
+CopyFile /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection 600
+CreateLink /etc/fonts/conf.d/69-urw-bookman.conf /usr/share/fontconfig/conf.default/69-urw-bookman.conf
+CreateLink /etc/fonts/conf.d/69-urw-c059.conf /usr/share/fontconfig/conf.default/69-urw-c059.conf
+CreateLink /etc/fonts/conf.d/69-urw-d050000l.conf /usr/share/fontconfig/conf.default/69-urw-d050000l.conf
+CreateLink /etc/fonts/conf.d/69-urw-fallback-backwards.conf /usr/share/fontconfig/conf.default/69-urw-fallback-backwards.conf
+CreateLink /etc/fonts/conf.d/69-urw-fallback-generics.conf /usr/share/fontconfig/conf.default/69-urw-fallback-generics.conf
+CreateLink /etc/fonts/conf.d/69-urw-fallback-specifics.conf /usr/share/fontconfig/conf.default/69-urw-fallback-specifics.conf
+CreateLink /etc/fonts/conf.d/69-urw-gothic.conf /usr/share/fontconfig/conf.default/69-urw-gothic.conf
+CreateLink /etc/fonts/conf.d/69-urw-nimbus-mono-ps.conf /usr/share/fontconfig/conf.default/69-urw-nimbus-mono-ps.conf
+CreateLink /etc/fonts/conf.d/69-urw-nimbus-roman.conf /usr/share/fontconfig/conf.default/69-urw-nimbus-roman.conf
+CreateLink /etc/fonts/conf.d/69-urw-nimbus-sans.conf /usr/share/fontconfig/conf.default/69-urw-nimbus-sans.conf
+CreateLink /etc/fonts/conf.d/69-urw-p052.conf /usr/share/fontconfig/conf.default/69-urw-p052.conf
+CreateLink /etc/fonts/conf.d/69-urw-standard-symbols-ps.conf /usr/share/fontconfig/conf.default/69-urw-standard-symbols-ps.conf
+CreateLink /etc/fonts/conf.d/69-urw-z003.conf /usr/share/fontconfig/conf.default/69-urw-z003.conf
+CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
+CopyFile /etc/resolv.conf
