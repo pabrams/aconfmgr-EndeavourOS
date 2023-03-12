@@ -156,3 +156,34 @@ SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmco
 
 
 CopyFile /etc/resolv.conf
+
+
+# Sun 12 Mar 2023 03:34:05 AM EDT - Extra files
+
+
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen-fallback.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1-fallback.conf
+
+
+# Sun 12 Mar 2023 03:34:05 AM EDT - New / changed files
+
+
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen.conf 755
+CopyFile /etc/sddm.conf.d/kde_settings.conf
+CopyFile /etc/resolv.conf
+RemoveFile /etc/sddm.conf
+CreateFile /etc/sddm.conf > /dev/null
+
+
+# Sun 12 Mar 2023 03:34:05 AM EDT - Extra file properties
+
+
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen.conf mode ''
