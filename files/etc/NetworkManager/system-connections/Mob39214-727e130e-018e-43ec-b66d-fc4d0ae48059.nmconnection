@@ -1,23 +1,26 @@
 [connection]
 id=Mob39214
-uuid=2216dc1a-fc42-420b-ab62-d8e89dd808e0
+uuid=727e130e-018e-43ec-b66d-fc4d0ae48059
 type=wifi
+interface-name=wlan0
 permissions=user:i:;
 
 [wifi]
-cloned-mac-address=36:3F:E1:36:91:CA
 mode=infrastructure
 ssid=Mob39214
 
 [wifi-security]
-key-mgmt=sae
+auth-alg=open
+key-mgmt=wpa-psk
+leap-password-flags=1
 psk-flags=1
+wep-key-flags=1
 
 [ipv4]
 method=auto
 
 [ipv6]
-addr-gen-mode=stable-privacy
+addr-gen-mode=default
 method=auto
 
 [proxy]

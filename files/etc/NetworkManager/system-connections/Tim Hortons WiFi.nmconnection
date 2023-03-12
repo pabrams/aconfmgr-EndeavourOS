@@ -1,0 +1,19 @@
+[connection]
+id=Tim Hortons WiFi
+uuid=43f4740c-8b8f-4cc2-883f-0b8d00647c0a
+type=wifi
+interface-name=wlan0
+permissions=user:i:;
+
+[wifi]
+mode=infrastructure
+ssid=Tim Hortons WiFi
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
