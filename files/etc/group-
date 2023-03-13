@@ -1,5 +1,5 @@
 root:x:0:root
-sys:x:3:bin
+sys:x:3:bin,i
 mem:x:8:
 ftp:x:11:
 mail:x:12:
@@ -14,7 +14,7 @@ scanner:x:96:
 power:x:98:
 nobody:x:65534:
 adm:x:999:daemon
-wheel:x:998:
+wheel:x:998:i
 utmp:x:997:
 audio:x:996:
 disk:x:995:
@@ -31,7 +31,7 @@ uucp:x:986:
 video:x:985:sddm
 users:x:984:
 systemd-journal:x:983:
-rfkill:x:982:
+rfkill:x:982:i
 bin:x:1:daemon
 daemon:x:2:bin
 http:x:33:
@@ -60,3 +60,4 @@ rtkit:x:133:
 sddm:x:968:
 usbmux:x:140:
 i:x:1000:
+nvidia-persistenced:x:143:

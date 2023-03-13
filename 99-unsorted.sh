@@ -205,3 +205,58 @@ CreateLink /etc/fonts/conf.d/69-urw-standard-symbols-ps.conf /usr/share/fontconf
 CreateLink /etc/fonts/conf.d/69-urw-z003.conf /usr/share/fontconfig/conf.default/69-urw-z003.conf
 CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
 CopyFile /etc/resolv.conf
+
+
+# Mon 13 Mar 2023 02:46:07 AM EDT - Unknown packages
+
+
+AddPackage seamonkey # SeaMonkey internet suite
+AddPackage steam # Valve's digital software delivery system
+
+
+# Mon 13 Mar 2023 02:46:07 AM EDT - Extra files
+
+
+RemoveFile /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection
+RemoveFile /etc/NetworkManager/system-connections/Mob39214.nmconnection
+RemoveFile /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen-fallback.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1-fallback.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts-fallback.conf
+
+
+# Mon 13 Mar 2023 02:46:07 AM EDT - New / changed files
+
+
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen.conf 755
+CopyFile /etc/NetworkManager/system-connections/Mob39214-79e3c365-1e98-4705-9a6f-5887f329c23e.nmconnection 600
+CopyFile /etc/systemd/system/paccache.service
+CopyFile /etc/systemd/system/paccache.timer
+CreateLink /etc/systemd/system/timers.target.wants/paccache.timer /etc/systemd/system/paccache.timer
+CopyFile /etc/group
+CopyFile /etc/group-
+CopyFile /etc/passwd
+CopyFile /etc/passwd-
+CopyFile /etc/resolv.conf
+
+
+# Mon 13 Mar 2023 02:46:07 AM EDT - Extra file properties
+
+
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen.conf mode ''
+SetFileProperty /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection mode ''
+SetFileProperty /etc/NetworkManager/system-connections/Mob39214.nmconnection mode ''
+SetFileProperty /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection mode ''

@@ -60,3 +60,5 @@ rtkit:x:133:
 sddm:x:968:
 usbmux:x:140:
 i:x:1000:
+nvidia-persistenced:x:143:
+geoclue:x:967:
