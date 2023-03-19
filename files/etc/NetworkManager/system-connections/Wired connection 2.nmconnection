@@ -1,15 +1,14 @@
 [connection]
 id=Wired connection 2
-uuid=cada4cd2-2e81-313f-9c2d-b68df481b4c3
+uuid=442f9552-c88b-3426-b35d-f9bed0dcd194
 type=ethernet
-autoconnect-priority=-100
 
 [ethernet]
-auto-negotiate=true
-cloned-mac-address=22:FD:B3:9C:37:AF
-mac-address=98:E7:F4:58:D4:DE
+cloned-mac-address=AE:80:98:FB:0F:AF
+mac-address=F2:1F:C7:DB:CB:BE
 
 [ipv4]
+ignore-auto-dns=true
 method=auto
 
 [ipv6]

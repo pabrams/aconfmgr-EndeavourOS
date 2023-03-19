@@ -260,3 +260,59 @@ SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-
 SetFileProperty /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection mode ''
 SetFileProperty /etc/NetworkManager/system-connections/Mob39214.nmconnection mode ''
 SetFileProperty /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection mode ''
+
+
+# Sun 19 Mar 2023 12:16:42 PM EDT - Unknown packages
+
+
+AddPackage broot # Fuzzy Search + tree + cd
+AddPackage gparted # A Partition Magic clone, frontend to GNU Parted
+AddPackage kio-gdrive # KIO Slave to access Google Drive
+AddPackage tree # A directory listing program displaying a depth indented list of files
+
+
+# Sun 19 Mar 2023 12:16:42 PM EDT - Unknown foreign packages
+
+
+AddPackage --foreign jumpapp # A run-or-raise application switcher for any X11 desktop
+AddPackage --foreign webcamoid # Webcamoid is a full featured webcam capture application.
+
+
+# Sun 19 Mar 2023 12:16:42 PM EDT - Extra files
+
+
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen-fallback.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1-fallback.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts-fallback.conf
+
+
+# Sun 19 Mar 2023 12:16:42 PM EDT - New / changed files
+
+
+CreateDir /efi/System\ Volume\ Information
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen.conf 755
+CopyFile /etc/NetworkManager/system-connections/CF\ PUBLIC\ WIFI.nmconnection 600
+CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
+CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection 600
+CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection 600
+CopyFile /etc/NetworkManager/system-connections/Mob39214-79e3c365-1e98-4705-9a6f-5887f329c23e.nmconnection 600
+CopyFile /etc/resolv.conf
+
+
+# Sun 19 Mar 2023 12:16:42 PM EDT - Extra file properties
+
+
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen.conf mode ''
