@@ -139,7 +139,6 @@ RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnect
 
 # Sat 11 Mar 2023 11:37:21 AM EST - New / changed files
 
-
 CreateLink /usr/bin/jest ../lib/node_modules/jest-cli/bin/jest.js
 CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
 
