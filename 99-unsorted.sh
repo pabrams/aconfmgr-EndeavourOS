@@ -315,3 +315,74 @@ SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1.conf mode ''
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen-fallback.conf mode ''
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen.conf mode ''
+
+
+# Sat 25 Mar 2023 05:02:31 AM EDT - Unknown packages
+
+
+AddPackage cataclysm-dda # A post-apocalyptic roguelike.
+AddPackage gnucash # Personal and small-business financial-accounting application
+AddPackage ruby # An object-oriented language for quick and easy programming
+
+
+# Sat 25 Mar 2023 05:02:31 AM EDT - Missing packages
+
+
+RemovePackage konsole
+RemovePackage seamonkey
+RemovePackage terminator
+RemovePackage yakuake
+
+
+# Sat 25 Mar 2023 05:02:31 AM EDT - Unknown foreign packages
+
+
+AddPackage --foreign android-emulator # Google Android Emulator
+AddPackage --foreign hyper # A terminal built on web technologies
+AddPackage --foreign mailspring # A beautiful, fast and maintained fork of Nylas Mail by one of the original authors.
+
+
+# Sat 25 Mar 2023 05:02:31 AM EDT - New / changed files
+
+
+CopyFile /etc/NetworkManager/system-connections/Free\ Client\ WiFi.nmconnection 600
+CopyFile /etc/sgml/catalog
+CopyFile /etc/sgml/sgml-docbook.cat
+CopyFile /etc/sgml/sgml-ent.cat
+CreateLink /usr/local/bin/hyper /usr/lib/hyper/resources/bin/hyper
+CopyFile /etc/resolv.conf
+
+
+# Sat 25 Mar 2023 02:22:49 PM EDT - Extra files
+
+
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen-fallback.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1-fallback.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts.conf
+RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts-fallback.conf
+
+
+# Sat 25 Mar 2023 02:22:49 PM EDT - New / changed files
+
+
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.21-1-lts-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.21-1-lts.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.8-arch1-1-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.8-arch1-1.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.8-zen1-1-zen-fallback.conf 755
+CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.8-zen1-1-zen.conf 755
+CreateFile /etc/eos-repo-before-arch-repos.once > /dev/null
+CopyFile /etc/resolv.conf
+
+
+# Sat 25 Mar 2023 02:22:49 PM EDT - Extra file properties
+
+
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen-fallback.conf mode ''
+SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen.conf mode ''
