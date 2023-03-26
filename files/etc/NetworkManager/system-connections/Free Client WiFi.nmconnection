@@ -1,0 +1,19 @@
+[connection]
+id=Free Client WiFi
+uuid=8b7ec55a-7c0f-47f2-b0c9-ad18f37eb7b2
+type=wifi
+interface-name=wlan0
+permissions=user:i:;
+
+[wifi]
+mode=infrastructure
+ssid=Free Client WiFi
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]

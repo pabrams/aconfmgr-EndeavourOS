@@ -386,3 +386,33 @@ SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1.conf mode ''
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen-fallback.conf mode ''
 SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen.conf mode ''
+
+
+# Sun 26 Mar 2023 12:19:28 AM EDT - Unknown packages
+
+
+AddPackage bpytop # Resource monitor that shows usage and stats for processor, memory, disks, network and processes
+AddPackage digikam # An advanced digital photo management application
+AddPackage lutris # Open Gaming Platform
+AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment (odd versions are unstable!)
+AddPackage signal-desktop # Signal Private Messenger for Linux
+AddPackage virtualbox # Powerful x86 virtualization for enterprise as well as home use
+
+
+# Sun 26 Mar 2023 12:19:29 AM EDT - Unknown foreign packages
+
+
+AddPackage --foreign pamac-aur # A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support
+
+
+# Sun 26 Mar 2023 12:19:29 AM EDT - New / changed files
+
+
+CopyFile /etc/NetworkManager/system-connections/BELLWIFI@MCDONALDS.nmconnection 600
+CreateLink /etc/systemd/system/timers.target.wants/pamac-cleancache.timer /usr/lib/systemd/system/pamac-cleancache.timer
+CopyFile /etc/xml/catalog
+CopyFile /etc/group
+CopyFile /etc/group-
+CopyFile /etc/passwd
+CopyFile /etc/passwd-
+CopyFile /etc/resolv.conf

@@ -62,3 +62,5 @@ usbmux:x:140:
 i:x:1000:
 nvidia-persistenced:x:143:
 geoclue:x:967:
+vboxusers:x:108:
+saned:x:966:
