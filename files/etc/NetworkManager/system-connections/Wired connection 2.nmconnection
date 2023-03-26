@@ -4,8 +4,9 @@ uuid=442f9552-c88b-3426-b35d-f9bed0dcd194
 type=ethernet
 
 [ethernet]
-cloned-mac-address=AE:80:98:FB:0F:AF
-mac-address=F2:1F:C7:DB:CB:BE
+auto-negotiate=true
+cloned-mac-address=F2:2D:CF:F2:BC:8C
+mac-address=98:E7:F4:58:D4:DE
 
 [ipv4]
 ignore-auto-dns=true

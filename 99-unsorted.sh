@@ -227,3 +227,15 @@ RemovePackage seamonkey
 
 RemoveFile /etc/passwd
 RemoveFile /etc/group
+
+
+# Sun 26 Mar 2023 12:29:46 PM EDT - New / changed files
+
+
+CopyFile /etc/NetworkManager/system-connections/HP02C63A.nmconnection 600
+CopyFile /etc/NetworkManager/system-connections/The\ Metcalfe\ Hotel.nmconnection 600
+CopyFile /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection 600
+CopyFile /etc/firewalld/services/kdeconnect.xml
+CopyFile /etc/firewalld/services/kdeconnect.xml.old
+CopyFile /etc/firewalld/zones/public.xml
+CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection 600

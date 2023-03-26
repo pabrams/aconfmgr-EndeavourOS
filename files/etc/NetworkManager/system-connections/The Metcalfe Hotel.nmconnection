@@ -1,13 +1,13 @@
 [connection]
-id=Tim Hortons WiFi
-uuid=f95ba0b8-2ba0-4b57-be50-8677a2a924ff
+id=The Metcalfe Hotel
+uuid=fb991ded-9a28-40b4-9cbf-7ae6fa716d16
 type=wifi
 interface-name=wlan0
 permissions=user:i:;
 
 [wifi]
 mode=infrastructure
-ssid=Tim Hortons WiFi
+ssid=The Metcalfe Hotel
 
 [ipv4]
 method=auto
