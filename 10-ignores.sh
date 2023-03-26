@@ -35,4 +35,10 @@ IgnorePath '/var/tmp/*'
 # bootloader stuff
 IgnorePath '/efi/EFI/*'
 IgnorePath '/efi/2face0cfde944eaa99797becc37eb385/*'
-IgnorePath '/efi/loader/random-seed'
+IgnorePath '/efi/loader/*'
+
+# resolv.conf changes with every private IP
+IgnorePath '/etc/resolv.conf'
+IgnorePath '/etc/passwd'
+IgnorePath '/etc/group'
+

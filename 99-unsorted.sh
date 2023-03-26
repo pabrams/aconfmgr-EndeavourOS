@@ -2,15 +2,6 @@
 
 # Thu 09 Mar 2023 11:23:01 PM EST - New / changed files
 
-
-CopyFile /efi/loader/entries.srel 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen.conf 755
-CopyFile /efi/loader/loader.conf 755
 CreateFile /etc/.pwd.lock 600 > /dev/null
 CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
 CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection 600
@@ -68,8 +59,6 @@ CreateLink /etc/fonts/conf.d/69-unifont.conf /usr/share/fontconfig/conf.default/
 CreateLink /etc/fonts/conf.d/80-delicious.conf /usr/share/fontconfig/conf.default/80-delicious.conf
 CreateLink /etc/fonts/conf.d/90-synthetic.conf /usr/share/fontconfig/conf.default/90-synthetic.conf
 CopyFile /etc/fstab
-CopyFile /etc/group
-CopyFile /etc/group-
 CopyFile /etc/hostname
 CopyFile /etc/hosts
 CopyFile /etc/issue
@@ -87,7 +76,6 @@ CopyFile /etc/pacman.d/mirrorlist
 CopyFile /etc/passwd
 CopyFile /etc/passwd-
 CopyFile /etc/passwd.OLD
-CopyFile /etc/resolv.conf
 CopyFile /etc/sddm.conf
 CopyFile /etc/shells
 CopyFile /etc/skel/.bashrc 755
@@ -122,13 +110,6 @@ CopyFile /etc/timezone
 CopyFile /etc/vconsole.conf
 CreateDir /lost+found 700
 
-
-# Sat 11 Mar 2023 11:37:21 AM EST - Unknown packages
-
-
-AddPackage rustup # The Rust toolchain installer
-
-
 # Sat 11 Mar 2023 11:37:21 AM EST - Extra files
 
 
@@ -150,42 +131,12 @@ SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmco
 SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection mode ''
 SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection mode ''
 
-
-# Sat 11 Mar 2023 01:00:46 PM EST - New / changed files
-
-
-CopyFile /etc/resolv.conf
-
-
-# Sun 12 Mar 2023 03:34:05 AM EDT - Extra files
-
-
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen-fallback.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1-fallback.conf
-
-
-# Sun 12 Mar 2023 03:34:05 AM EDT - New / changed files
-
-
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen.conf 755
 CopyFile /etc/sddm.conf.d/kde_settings.conf
-CopyFile /etc/resolv.conf
 RemoveFile /etc/sddm.conf
 CreateFile /etc/sddm.conf > /dev/null
 
 
 # Sun 12 Mar 2023 03:34:05 AM EDT - Extra file properties
-
-
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch1-1.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen1-1-zen.conf mode ''
 
 CopyFile /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection 600
 CopyFile /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection 600
@@ -203,15 +154,12 @@ CreateLink /etc/fonts/conf.d/69-urw-p052.conf /usr/share/fontconfig/conf.default
 CreateLink /etc/fonts/conf.d/69-urw-standard-symbols-ps.conf /usr/share/fontconfig/conf.default/69-urw-standard-symbols-ps.conf
 CreateLink /etc/fonts/conf.d/69-urw-z003.conf /usr/share/fontconfig/conf.default/69-urw-z003.conf
 CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
-CopyFile /etc/resolv.conf
 
 
 # Mon 13 Mar 2023 02:46:07 AM EDT - Unknown packages
 
 
 AddPackage seamonkey # SeaMonkey internet suite
-AddPackage steam # Valve's digital software delivery system
-
 
 # Mon 13 Mar 2023 02:46:07 AM EDT - Extra files
 
@@ -219,194 +167,45 @@ AddPackage steam # Valve's digital software delivery system
 RemoveFile /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection
 RemoveFile /etc/NetworkManager/system-connections/Mob39214.nmconnection
 RemoveFile /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen-fallback.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1-fallback.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts-fallback.conf
-
 
 # Mon 13 Mar 2023 02:46:07 AM EDT - New / changed files
 
-
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen.conf 755
 CopyFile /etc/NetworkManager/system-connections/Mob39214-79e3c365-1e98-4705-9a6f-5887f329c23e.nmconnection 600
 CopyFile /etc/systemd/system/paccache.service
 CopyFile /etc/systemd/system/paccache.timer
 CreateLink /etc/systemd/system/timers.target.wants/paccache.timer /etc/systemd/system/paccache.timer
-CopyFile /etc/group
-CopyFile /etc/group-
-CopyFile /etc/passwd
-CopyFile /etc/passwd-
-CopyFile /etc/resolv.conf
 
 
 # Mon 13 Mar 2023 02:46:07 AM EDT - Extra file properties
-
-
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.15-1-lts.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-arch2-1.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.2-zen2-1-zen.conf mode ''
 SetFileProperty /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection mode ''
 SetFileProperty /etc/NetworkManager/system-connections/Mob39214.nmconnection mode ''
 SetFileProperty /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection mode ''
-
-
-# Sun 19 Mar 2023 12:16:42 PM EDT - Unknown packages
-
-
-AddPackage broot # Fuzzy Search + tree + cd
-AddPackage gparted # A Partition Magic clone, frontend to GNU Parted
-AddPackage kio-gdrive # KIO Slave to access Google Drive
-AddPackage tree # A directory listing program displaying a depth indented list of files
-
-
-# Sun 19 Mar 2023 12:16:42 PM EDT - Unknown foreign packages
-
-
-AddPackage --foreign jumpapp # A run-or-raise application switcher for any X11 desktop
-AddPackage --foreign webcamoid # Webcamoid is a full featured webcam capture application.
-
-
-# Sun 19 Mar 2023 12:16:42 PM EDT - Extra files
-
-
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen-fallback.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1-fallback.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts-fallback.conf
-
 
 # Sun 19 Mar 2023 12:16:42 PM EDT - New / changed files
 
 
 CreateDir /efi/System\ Volume\ Information
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen.conf 755
 CopyFile /etc/NetworkManager/system-connections/CF\ PUBLIC\ WIFI.nmconnection 600
 CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
 CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection 600
 CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection 600
 CopyFile /etc/NetworkManager/system-connections/Mob39214-79e3c365-1e98-4705-9a6f-5887f329c23e.nmconnection 600
-CopyFile /etc/resolv.conf
-
-
-# Sun 19 Mar 2023 12:16:42 PM EDT - Extra file properties
-
-
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.18-1-lts.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-arch1-1.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.5-zen1-1-zen.conf mode ''
-
-
-# Sat 25 Mar 2023 05:02:31 AM EDT - Unknown packages
-
-
-AddPackage cataclysm-dda # A post-apocalyptic roguelike.
-AddPackage gnucash # Personal and small-business financial-accounting application
-AddPackage ruby # An object-oriented language for quick and easy programming
-
 
 # Sat 25 Mar 2023 05:02:31 AM EDT - Missing packages
-
-
 RemovePackage konsole
-RemovePackage seamonkey
-RemovePackage terminator
-RemovePackage yakuake
-
-
-# Sat 25 Mar 2023 05:02:31 AM EDT - Unknown foreign packages
-
-
-AddPackage --foreign android-emulator # Google Android Emulator
-AddPackage --foreign hyper # A terminal built on web technologies
-AddPackage --foreign mailspring # A beautiful, fast and maintained fork of Nylas Mail by one of the original authors.
-
 
 # Sat 25 Mar 2023 05:02:31 AM EDT - New / changed files
-
-
 CopyFile /etc/NetworkManager/system-connections/Free\ Client\ WiFi.nmconnection 600
 CopyFile /etc/sgml/catalog
 CopyFile /etc/sgml/sgml-docbook.cat
 CopyFile /etc/sgml/sgml-ent.cat
 CreateLink /usr/local/bin/hyper /usr/lib/hyper/resources/bin/hyper
-CopyFile /etc/resolv.conf
-
-
-# Sat 25 Mar 2023 02:22:49 PM EDT - Extra files
-
-
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen-fallback.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1-fallback.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts.conf
-RemoveFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts-fallback.conf
-
 
 # Sat 25 Mar 2023 02:22:49 PM EDT - New / changed files
 
-
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.21-1-lts-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.21-1-lts.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.8-arch1-1-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.8-arch1-1.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.8-zen1-1-zen-fallback.conf 755
-CopyFile /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.8-zen1-1-zen.conf 755
 CreateFile /etc/eos-repo-before-arch-repos.once > /dev/null
-CopyFile /etc/resolv.conf
-
-
-# Sat 25 Mar 2023 02:22:49 PM EDT - Extra file properties
-
-
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.1.19-1-lts.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-arch1-1.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen-fallback.conf mode ''
-SetFileProperty /efi/loader/entries/2face0cfde944eaa99797becc37eb385-6.2.6-zen1-1-zen.conf mode ''
-
-
-# Sun 26 Mar 2023 12:19:28 AM EDT - Unknown packages
-
-
-AddPackage bpytop # Resource monitor that shows usage and stats for processor, memory, disks, network and processes
-AddPackage digikam # An advanced digital photo management application
-AddPackage lutris # Open Gaming Platform
-AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment (odd versions are unstable!)
-AddPackage signal-desktop # Signal Private Messenger for Linux
-AddPackage virtualbox # Powerful x86 virtualization for enterprise as well as home use
-
-
-# Sun 26 Mar 2023 12:19:29 AM EDT - Unknown foreign packages
-
-
-AddPackage --foreign pamac-aur # A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support
-
 
 # Sun 26 Mar 2023 12:19:29 AM EDT - New / changed files
-
 
 CopyFile /etc/NetworkManager/system-connections/BELLWIFI@MCDONALDS.nmconnection 600
 CreateLink /etc/systemd/system/timers.target.wants/pamac-cleancache.timer /usr/lib/systemd/system/pamac-cleancache.timer
@@ -415,4 +214,16 @@ CopyFile /etc/group
 CopyFile /etc/group-
 CopyFile /etc/passwd
 CopyFile /etc/passwd-
-CopyFile /etc/resolv.conf
+
+
+# Sun 26 Mar 2023 02:37:22 AM EDT - Missing packages
+
+
+RemovePackage seamonkey
+
+
+# Sun 26 Mar 2023 02:37:22 AM EDT - Extra files
+
+
+RemoveFile /etc/passwd
+RemoveFile /etc/group
