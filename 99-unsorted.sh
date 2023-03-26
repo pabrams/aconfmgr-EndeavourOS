@@ -45,6 +45,9 @@ CreateLink /etc/fonts/conf.d/51-local.conf /usr/share/fontconfig/conf.default/51
 CreateLink /etc/fonts/conf.d/57-dejavu-sans-mono.conf /usr/share/fontconfig/conf.default/57-dejavu-sans-mono.conf
 CreateLink /etc/fonts/conf.d/57-dejavu-sans.conf /usr/share/fontconfig/conf.default/57-dejavu-sans.conf
 CreateLink /etc/fonts/conf.d/57-dejavu-serif.conf /usr/share/fontconfig/conf.default/57-dejavu-serif.conf
+CopyFile /etc/passwd
+CopyFile /etc/passwd-
+CopyFile /etc/passwd.OLD
 CreateLink /etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf /usr/share/fontconfig/conf.default/58-dejavu-lgc-sans-mono.conf
 CreateLink /etc/fonts/conf.d/58-dejavu-lgc-sans.conf /usr/share/fontconfig/conf.default/58-dejavu-lgc-sans.conf
 CreateLink /etc/fonts/conf.d/58-dejavu-lgc-serif.conf /usr/share/fontconfig/conf.default/58-dejavu-lgc-serif.conf
@@ -73,9 +76,6 @@ CreateLink /etc/os-release ../usr/lib/os-release
 CopyFile /etc/pacman.conf
 CopyFile /etc/pacman.d/endeavouros-mirrorlist
 CopyFile /etc/pacman.d/mirrorlist
-CopyFile /etc/passwd
-CopyFile /etc/passwd-
-CopyFile /etc/passwd.OLD
 CopyFile /etc/sddm.conf
 CopyFile /etc/shells
 CopyFile /etc/skel/.bashrc 755
@@ -109,14 +109,6 @@ CreateLink /etc/systemd/user/sockets.target.wants/pipewire.socket /usr/lib/syste
 CopyFile /etc/timezone
 CopyFile /etc/vconsole.conf
 CreateDir /lost+found 700
-
-# Sat 11 Mar 2023 11:37:21 AM EST - Extra files
-
-
-RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection
-RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection
-RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection
-
 
 # Sat 11 Mar 2023 11:37:21 AM EST - New / changed files
 
@@ -154,12 +146,6 @@ CreateLink /etc/fonts/conf.d/69-urw-p052.conf /usr/share/fontconfig/conf.default
 CreateLink /etc/fonts/conf.d/69-urw-standard-symbols-ps.conf /usr/share/fontconfig/conf.default/69-urw-standard-symbols-ps.conf
 CreateLink /etc/fonts/conf.d/69-urw-z003.conf /usr/share/fontconfig/conf.default/69-urw-z003.conf
 CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
-
-
-# Mon 13 Mar 2023 02:46:07 AM EDT - Unknown packages
-
-
-AddPackage seamonkey # SeaMonkey internet suite
 
 # Mon 13 Mar 2023 02:46:07 AM EDT - Extra files
 
@@ -210,23 +196,6 @@ CreateFile /etc/eos-repo-before-arch-repos.once > /dev/null
 CopyFile /etc/NetworkManager/system-connections/BELLWIFI@MCDONALDS.nmconnection 600
 CreateLink /etc/systemd/system/timers.target.wants/pamac-cleancache.timer /usr/lib/systemd/system/pamac-cleancache.timer
 CopyFile /etc/xml/catalog
-CopyFile /etc/group
-CopyFile /etc/group-
-CopyFile /etc/passwd
-CopyFile /etc/passwd-
-
-
-# Sun 26 Mar 2023 02:37:22 AM EDT - Missing packages
-
-
-RemovePackage seamonkey
-
-
-# Sun 26 Mar 2023 02:37:22 AM EDT - Extra files
-
-
-RemoveFile /etc/passwd
-RemoveFile /etc/group
 
 
 # Sun 26 Mar 2023 12:29:46 PM EDT - New / changed files
