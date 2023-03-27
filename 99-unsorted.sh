@@ -208,3 +208,34 @@ CopyFile /etc/firewalld/services/kdeconnect.xml
 CopyFile /etc/firewalld/services/kdeconnect.xml.old
 CopyFile /etc/firewalld/zones/public.xml
 CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection 600
+
+
+# Sun 26 Mar 2023 10:09:59 PM EDT - Extra files
+
+
+RemoveFile /etc/passwd
+RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection
+
+
+# Sun 26 Mar 2023 10:09:59 PM EDT - New / changed files
+
+
+CopyFile /etc/gai.conf
+CopyFile /etc/group-
+CreateLink /usr/bin/how2 ../lib/node_modules/how2/bin/how2
+CreateLink /usr/bin/joplin /home/i/.joplin-bin/bin/joplin
+CopyFile /etc/sddm.conf.d/kde_settings.conf
+
+
+# Mon 27 Mar 2023 07:39:44 PM EDT - Unknown packages
+
+
+AddPackage kcm-fcitx # KDE Config Module for Fcitx
+AddPackage r8168 # A kernel module for Realtek 8168 network cards
+
+
+# Mon 27 Mar 2023 07:39:44 PM EDT - New / changed files
+
+
+CopyFile /etc/pacman.d/endeavouros-mirrorlist.pacnew
+CopyFile /usr/local/share/kbd/keymaps/paul.map
