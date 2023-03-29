@@ -226,14 +226,6 @@ CreateLink /usr/bin/how2 ../lib/node_modules/how2/bin/how2
 CreateLink /usr/bin/joplin /home/i/.joplin-bin/bin/joplin
 CopyFile /etc/sddm.conf.d/kde_settings.conf
 
-
-# Mon 27 Mar 2023 07:39:44 PM EDT - Unknown packages
-
-
-AddPackage kcm-fcitx # KDE Config Module for Fcitx
-AddPackage r8168 # A kernel module for Realtek 8168 network cards
-
-
 # Mon 27 Mar 2023 07:39:44 PM EDT - New / changed files
 
 

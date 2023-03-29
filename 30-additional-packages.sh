@@ -38,3 +38,6 @@ AddPackage broot # Fuzzy Search + tree + cd
 AddPackage gparted # A Partition Magic clone, frontend to GNU Parted
 AddPackage kio-gdrive # KIO Slave to access Google Drive
 AddPackage tree # A directory listing program displaying a depth indented list of files
+AddPackage kcm-fcitx # KDE Config Module for Fcitx
+AddPackage r8168 # A kernel module for Realtek 8168 network cards
+
