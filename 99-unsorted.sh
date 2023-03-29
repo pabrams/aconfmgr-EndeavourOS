@@ -45,9 +45,6 @@ CreateLink /etc/fonts/conf.d/51-local.conf /usr/share/fontconfig/conf.default/51
 CreateLink /etc/fonts/conf.d/57-dejavu-sans-mono.conf /usr/share/fontconfig/conf.default/57-dejavu-sans-mono.conf
 CreateLink /etc/fonts/conf.d/57-dejavu-sans.conf /usr/share/fontconfig/conf.default/57-dejavu-sans.conf
 CreateLink /etc/fonts/conf.d/57-dejavu-serif.conf /usr/share/fontconfig/conf.default/57-dejavu-serif.conf
-CopyFile /etc/passwd
-CopyFile /etc/passwd-
-CopyFile /etc/passwd.OLD
 CreateLink /etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf /usr/share/fontconfig/conf.default/58-dejavu-lgc-sans-mono.conf
 CreateLink /etc/fonts/conf.d/58-dejavu-lgc-sans.conf /usr/share/fontconfig/conf.default/58-dejavu-lgc-sans.conf
 CreateLink /etc/fonts/conf.d/58-dejavu-lgc-serif.conf /usr/share/fontconfig/conf.default/58-dejavu-lgc-serif.conf
@@ -227,7 +224,6 @@ CreateLink /usr/bin/joplin /home/i/.joplin-bin/bin/joplin
 CopyFile /etc/sddm.conf.d/kde_settings.conf
 
 # Mon 27 Mar 2023 07:39:44 PM EDT - New / changed files
-
 
 CopyFile /etc/pacman.d/endeavouros-mirrorlist.pacnew
 CopyFile /usr/local/share/kbd/keymaps/paul.map
