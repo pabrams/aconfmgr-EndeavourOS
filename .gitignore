@@ -2,5 +2,4 @@
 files/efi/loader/random-seed
 files/etc/passwd.OLD
 files/etc/passwd-
-files/etc/NetworkManager/system-connections/A&W Wi-Fi Gratuit_EXT.nmconnection
-files/etc/NetworkManager/system-connections/KB Guest Wi-Fi.nmconnection
+files/etc/NetworkManager/system-connections/
