@@ -2,15 +2,8 @@
 
 # Thu 09 Mar 2023 11:23:01 PM EST - New / changed files
 
-CreateFile /etc/.pwd.lock 600 > /dev/null
-CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection 600
 CopyFile /etc/X11/xorg.conf.d/00-keyboard.conf
 CopyFile /etc/adjtime
-CreateDir /etc/credstore 0
-CreateDir /etc/credstore.encrypted 0
 CopyFile /etc/crypttab
 CopyFile /etc/default/keyboard
 CopyFile /etc/default/locale
@@ -110,15 +103,8 @@ CreateDir /lost+found 700
 # Sat 11 Mar 2023 11:37:21 AM EST - New / changed files
 
 CreateLink /usr/bin/jest ../lib/node_modules/jest-cli/bin/jest.js
-CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
-
 
 # Sat 11 Mar 2023 11:37:21 AM EST - Extra file properties
-
-
-SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection mode ''
-SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection mode ''
-SetFileProperty /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection mode ''
 
 CopyFile /etc/sddm.conf.d/kde_settings.conf
 RemoveFile /etc/sddm.conf
@@ -127,8 +113,6 @@ CreateFile /etc/sddm.conf > /dev/null
 
 # Sun 12 Mar 2023 03:34:05 AM EDT - Extra file properties
 
-CopyFile /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection 600
 CreateLink /etc/fonts/conf.d/69-urw-bookman.conf /usr/share/fontconfig/conf.default/69-urw-bookman.conf
 CreateLink /etc/fonts/conf.d/69-urw-c059.conf /usr/share/fontconfig/conf.default/69-urw-c059.conf
 CreateLink /etc/fonts/conf.d/69-urw-d050000l.conf /usr/share/fontconfig/conf.default/69-urw-d050000l.conf
@@ -142,43 +126,22 @@ CreateLink /etc/fonts/conf.d/69-urw-nimbus-sans.conf /usr/share/fontconfig/conf.
 CreateLink /etc/fonts/conf.d/69-urw-p052.conf /usr/share/fontconfig/conf.default/69-urw-p052.conf
 CreateLink /etc/fonts/conf.d/69-urw-standard-symbols-ps.conf /usr/share/fontconfig/conf.default/69-urw-standard-symbols-ps.conf
 CreateLink /etc/fonts/conf.d/69-urw-z003.conf /usr/share/fontconfig/conf.default/69-urw-z003.conf
-CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
 
-# Mon 13 Mar 2023 02:46:07 AM EDT - Extra files
-
-
-RemoveFile /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection
-RemoveFile /etc/NetworkManager/system-connections/Mob39214.nmconnection
-RemoveFile /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection
 
 # Mon 13 Mar 2023 02:46:07 AM EDT - New / changed files
 
-CopyFile /etc/NetworkManager/system-connections/Mob39214-79e3c365-1e98-4705-9a6f-5887f329c23e.nmconnection 600
 CopyFile /etc/systemd/system/paccache.service
 CopyFile /etc/systemd/system/paccache.timer
 CreateLink /etc/systemd/system/timers.target.wants/paccache.timer /etc/systemd/system/paccache.timer
 
-
-# Mon 13 Mar 2023 02:46:07 AM EDT - Extra file properties
-SetFileProperty /etc/NetworkManager/system-connections/Mob39214-727e130e-018e-43ec-b66d-fc4d0ae48059.nmconnection mode ''
-SetFileProperty /etc/NetworkManager/system-connections/Mob39214.nmconnection mode ''
-SetFileProperty /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection mode ''
-
 # Sun 19 Mar 2023 12:16:42 PM EDT - New / changed files
 
-
 CreateDir /efi/System\ Volume\ Information
-CopyFile /etc/NetworkManager/system-connections/CF\ PUBLIC\ WIFI.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Mob39214.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 1.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Mob39214-79e3c365-1e98-4705-9a6f-5887f329c23e.nmconnection 600
 
 # Sat 25 Mar 2023 05:02:31 AM EDT - Missing packages
 RemovePackage konsole
 
 # Sat 25 Mar 2023 05:02:31 AM EDT - New / changed files
-CopyFile /etc/NetworkManager/system-connections/Free\ Client\ WiFi.nmconnection 600
 CopyFile /etc/sgml/catalog
 CopyFile /etc/sgml/sgml-docbook.cat
 CopyFile /etc/sgml/sgml-ent.cat
@@ -190,26 +153,15 @@ CreateFile /etc/eos-repo-before-arch-repos.once > /dev/null
 
 # Sun 26 Mar 2023 12:19:29 AM EDT - New / changed files
 
-CopyFile /etc/NetworkManager/system-connections/BELLWIFI@MCDONALDS.nmconnection 600
 CreateLink /etc/systemd/system/timers.target.wants/pamac-cleancache.timer /usr/lib/systemd/system/pamac-cleancache.timer
 CopyFile /etc/xml/catalog
 
 
 # Sun 26 Mar 2023 12:29:46 PM EDT - New / changed files
 
-
-CopyFile /etc/NetworkManager/system-connections/HP02C63A.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/The\ Metcalfe\ Hotel.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/Tim\ Hortons\ WiFi.nmconnection 600
 CopyFile /etc/firewalld/services/kdeconnect.xml
 CopyFile /etc/firewalld/services/kdeconnect.xml.old
 CopyFile /etc/firewalld/zones/public.xml
-CopyFile /etc/NetworkManager/system-connections/Wired\ connection\ 2.nmconnection 600
-
-
-# Sun 26 Mar 2023 10:09:59 PM EDT - Extra files
-
-RemoveFile /etc/NetworkManager/system-connections/Wired\ connection\ 3.nmconnection
 
 # Sun 26 Mar 2023 10:09:59 PM EDT - New / changed files
 
@@ -461,16 +413,6 @@ RemovePackage --foreign onedrive
 RemovePackage --foreign pamac-aur
 RemovePackage --foreign webcamoid
 
-
-# Sun 09 Apr 2023 11:20:35 AM EDT - New / changed files
-
-
-CopyFile /etc/NetworkManager/system-connections/A\&W\ Wi-Fi\ Gratuit_EXT.nmconnection 600
-CopyFile /etc/NetworkManager/system-connections/KB\ Guest\ Wi-Fi.nmconnection 600
-CopyFile /etc/passwd-
-CopyFile /etc/passwd.OLD
-
-
 # Sun 09 Apr 2023 12:37:10 PM EDT - Unknown packages
 
 
@@ -705,3 +647,21 @@ AddPackage --foreign mailspring # A beautiful, fast and maintained fork of Nylas
 AddPackage --foreign onedrive # Free OneDrive client written in D
 AddPackage --foreign pamac-aur # A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support
 AddPackage --foreign webcamoid # Webcamoid is a full featured webcam capture application.
+
+
+# Thu 27 Apr 2023 01:32:39 AM EDT - New / changed files
+
+
+CreateFile /etc/.pwd.lock 600 > /dev/null
+
+
+# Thu 27 Apr 2023 01:36:34 AM EDT - Extra files
+
+
+RemoveFile /etc/.pwd.lock
+
+
+# Thu 27 Apr 2023 01:36:34 AM EDT - Extra file properties
+
+
+SetFileProperty /etc/.pwd.lock mode ''
