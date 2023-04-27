@@ -647,21 +647,3 @@ AddPackage --foreign mailspring # A beautiful, fast and maintained fork of Nylas
 AddPackage --foreign onedrive # Free OneDrive client written in D
 AddPackage --foreign pamac-aur # A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support
 AddPackage --foreign webcamoid # Webcamoid is a full featured webcam capture application.
-
-
-# Thu 27 Apr 2023 01:32:39 AM EDT - New / changed files
-
-
-CreateFile /etc/.pwd.lock 600 > /dev/null
-
-
-# Thu 27 Apr 2023 01:36:34 AM EDT - Extra files
-
-
-RemoveFile /etc/.pwd.lock
-
-
-# Thu 27 Apr 2023 01:36:34 AM EDT - Extra file properties
-
-
-SetFileProperty /etc/.pwd.lock mode ''
