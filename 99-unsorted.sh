@@ -374,3 +374,18 @@ CreateLink /usr/bin/npx ../lib/node_modules/npm/bin/npx-cli.js
 CreateLink /usr/bin/vsce ../lib/node_modules/@vscode/vsce/vsce
 CreateLink /usr/local/bin/hyper /usr/lib/hyper/resources/bin/hyper
 CopyFile /usr/local/share/kbd/keymaps/paul.map
+
+
+# Sat 20 May 2023 11:23:38 PM EDT - Unknown packages
+
+
+AddPackage angband # A roguelike dungeon exploration game based on the writings of JRR Tolkien
+AddPackage ifuse # A fuse filesystem to access the contents of an iPhone or iPod Touch
+
+
+# Sat 20 May 2023 11:23:38 PM EDT - New / changed files
+
+
+CreateLink /usr/bin/node-gyp ../lib/node_modules/node-gyp/bin/node-gyp.js
+CreateLink /usr/bin/node-sass ../lib/node_modules/node-sass/bin/node-sass
+CreateLink /usr/src/akvcam-1.2.3 /opt/akvcam/src
